@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script>
+        function submit() {
+            let Marks = document.getElementById("Grade").value;
+          if(Marks<=100 && Marks>=90)
+          {
+            console.log("The Grade is A");
+          }
+         else if(Marks<89 && Marks>=80)
+           {
+            console.log("The Grade is B");
+           }
+        else if(Marks<79 && Marks>=70)
+        {
+            console.log("The grade is c");
+        }
+        else if(Marks<69 && Marks>=60)
+        {
+            console.log("The Grade is D");
+        }
+        else if(Marks<60 && Marks>0)
+        {
+            console.log("Fail")
+        }
+        else{
+            console.log("Invalid Input");
+        }
+   
+        }
+    </script>
+</head>
+
+<body>
+    <label>Grades</label>
+    <input id="Grade" type="text" />
+    <button onclick="submit()">Submit</button>
+
+</body>
+
+</html>
