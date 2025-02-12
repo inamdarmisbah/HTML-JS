@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        function sumOfArray() {
+            let num = document.getElementById("SUM").value;
+            let array = num.split(',');
+
+
+            let sum = 0;
+            for (let i = 0; i < array.length; i++) {
+                sum = sum + Number(array[i]);
+
+            }
+            document.getElementById("resultSum").innerText = " Sum Of Array = " + sum;
+
+        }
+    </script>
+</head>
+
+<body>
+    <label>Numbers</label>
+    <input id="SUM" type="text" />
+    <button onclick="sumOfArray()">submit</button>
+    <div id="resultSum"></div>
+</body>
+
+</html>
