@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function evenodd(){
+                let num=document.getElementById("EO").value;
+                
+                if(num%2==0){
+                console.log("The Number is Even");
+                document.getElementById("result").innerText= "The Number is Even = "+num;
+                }
+                else{
+                    console.log("The Number is Odd");
+                    document.getElementById("result").innerText= "Number is Odd = "+num;
+                }
+
+
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter the Number :</label>
+        <input id="EO" type="text" />
+        <br>
+        <button onclick="evenodd()">Submit</button>
+        <br>
+        <div id="result"></div>
+    </body>
+    
+</html>

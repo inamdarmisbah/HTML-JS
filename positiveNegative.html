@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            function positiveNegative(){
+                let num=document.getElementById("PN").value;
+                let array=num.split(',');
+                let positive=[];
+                let negative=[];
+                let zero=[];
+                for( let i=0;i<array.length;i++){
+                    if(array[i]==0){
+                        zero.push(array[i]);
+
+                    }
+                     else if(array[i]>0){
+                        positive.push(array[i]);
+                    }
+                    else if(array[i]<0){
+                        negative.push(array[i]);
+                    }
+                
+
+
+                    
+
+                    
+                }
+                document.getElementById("resultPositive").innerText="Positive Number are = "+positive;
+                document.getElementById("resultNegative").innerText="Negative Number are = "+negative;
+                document.getElementById("resultUndifined").innerText="Not defined = "+zero;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Numbers</label>
+        <input id="PN" type="text" />
+        <button onclick="positiveNegative()">Submit</button>
+        <div id="resultPositive"></div>
+        <div id="resultNegative"></div>
+        <div id="resultUndifined"></div>
+    </body>
+</html>
